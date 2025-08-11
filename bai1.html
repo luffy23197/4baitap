@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diem</title>
+</head>
+<body>
+<script>
+    const diemVatLy   = parseFloat(prompt("Nhập điểm Vật lý:"));
+    const diemHoaHoc  = parseFloat(prompt("Nhập điểm Hóa học:"));
+    const diemSinhHoc = parseFloat(prompt("Nhập điểm Sinh học:"));
+
+    if ([diemVatLy, diemHoaHoc, diemSinhHoc].some(isNaN)) {
+        alert("Vui lòng nhập số hợp lệ cho cả ba môn!");
+    } else {
+        const tongDiem = diemVatLy + diemHoaHoc + diemSinhHoc;
+        const diemTrungBinh = tongDiem / 3;
+        alert(`Tổng điểm: ${tongDiem}\nĐiểm trung bình: ${diemTrungBinh.toFixed(2)}`);
+    }
+
+</script>
+</body>
+</html>

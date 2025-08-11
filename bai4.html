@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi hinh tron</title>
+</head>
+<body>
+<script>
+    const banKinh = parseFloat(prompt("Nhập bán kính hình tròn:"));
+    if (Number.isNaN(banKinh)) {
+    alert("Vui lòng nhập số hợp lệ.");
+} else if (banKinh < 0) {
+    alert("Bán kính không được âm.");
+} else {
+    const chuVi = 2 * Math.PI * banKinh;
+    alert(`Chu vi hình tròn: ${chuVi.toFixed(2)}`);
+}
+</script>
+</body>
+</html>

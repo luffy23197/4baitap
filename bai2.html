@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhiet do</title>
+</head>
+<body>
+<script> const nhietDoC = parseFloat(prompt("Nhập nhiệt độ theo độ C (°C):"));
+if (Number.isNaN(nhietDoC)) {
+alert("Vui lòng nhập số hợp lệ.");
+} else {
+const nhietDoF = nhietDoC * 9/5 + 32;
+alert(`${nhietDoC}°C = ${nhietDoF.toFixed(2)}°F`);
+}
+</script>
+</body>
+</html>
